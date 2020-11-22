@@ -1,5 +1,13 @@
 # Laravel Echo Web Sample
 
+Thanks @zsasko
+
+Now, I'm gonna remove Redis that will replaced by RabbitMQ
+
+Time: Team Vitality vs Natus Vincere, now the score is 1:2. today s1mple is so crazy :)))
+
+----------------------------------------
+
 This project is sample application displaying how user can create and broadcast Laravel Echo message to clients (web and android applications). 
 
 ![](https://cdn-images-1.medium.com/max/800/1*m8hG2m8mmC3gXULQ_HZawA.gif)

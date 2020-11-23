@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Broadcast;
+use App\Broadcasting\Broadcasters\TheRabbitmqBroadcaster;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Broadcast::extend('therabbitmq', function () {
+            return new TheRabbitmqBroadcaster();
+        });
     }
 }

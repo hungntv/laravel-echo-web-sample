@@ -57,8 +57,8 @@
       /**
        * Global Laravel Echo listener that listens 'MessageCreated' event in 'messages' channel.
        */
-      window.Echo.channel('messages').listen('MessageCreated', (e) => {
-        addMessageToList(e.message);
+      window.Echo.channel('messages_channel').listen('MessageCreated', (e) => {
+        addMessageToList(JSON.stringify(e));
       });
 
       /**

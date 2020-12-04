@@ -1,4 +1,4 @@
-# Laravel Echo Web Sample
+# Laravel Echo Web Sample without Redis
 
 The concept of this project: Laravel + RabbitMQ + laravel-echo-server-with-rabbitmq + Laravel-echo
 - Laravel: https://laravel.com/

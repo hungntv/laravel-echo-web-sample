@@ -1,5 +1,15 @@
 # Laravel Echo Web Sample
 
+The concept of this project: Laravel + RabbitMQ + laravel-echo-server-with-rabbitmq + Laravel-echo
+- Laravel: https://laravel.com/
+- RabbitMQ: open source message broker https://www.rabbitmq.com/
+- Laravel-echo-server-with-rabbitmq: node.js project to make a websocker server.
+- Laravel-echo: websocket client, use it for frontend https://github.com/laravel/echo
+
+If I complete this project, we can use any message broker, connection queue instead of Redis only.
+
+----------------------------------------
+
 Thanks @zsasko
 
 Now, I'm gonna remove Redis that will replaced by RabbitMQ

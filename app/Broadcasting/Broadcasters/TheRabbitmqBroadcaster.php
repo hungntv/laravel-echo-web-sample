@@ -5,11 +5,14 @@ namespace App\Broadcasting\Broadcasters;
 use Illuminate\Broadcasting\Broadcasters\Broadcaster;
 use Illuminate\Support\Arr;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Illuminate\Broadcasting\Broadcasters\UsePusherChannelConventions;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 
 class TheRabbitmqBroadcaster extends Broadcaster
 {
+    use UsePusherChannelConventions;
+    protected $prefix = "";
 
     //PhpAmqpLib\Connection\AMQPStreamConnection
     protected $connection;

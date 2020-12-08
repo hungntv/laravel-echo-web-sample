@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+//https://php-enqueue.github.io/laravel/quick_tour/
+        Enqueue\LaravelQueue\EnqueueServiceProvider::class,
+
     ],
 
     /*

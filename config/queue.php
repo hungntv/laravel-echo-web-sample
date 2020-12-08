@@ -67,6 +67,12 @@ return [
             'block_for' => null,
         ],
 
+//https://php-enqueue.github.io/laravel/queues/
+        'interop' => [
+            'driver' => 'interop',
+            'dsn' => 'amqp+rabbitmq://guest:guest@localhost:5672/%2f',
+        ],
+
     ],
 
     /*
